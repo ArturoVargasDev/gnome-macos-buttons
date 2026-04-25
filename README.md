@@ -96,7 +96,7 @@ Estos archivos sobrescriben únicamente los estilos de los botones de la `header
 
 1. **Descarga o clona el repositorio**  
    ```bash
-   git clone https://github.com/tuusuario/gnome-macos-buttons.git
+   git clone https://github.com/ArturoVargasDev/gnome-macos-buttons.git
    cd gnome-macos-buttons
    ```
 
