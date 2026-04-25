@@ -147,4 +147,3 @@ Puedes editar los archivos CSS directamente para cambiar tamaños, márgenes o c
 ## 📝 License
 
 This project is licensed under the **GNU General Public License v3.0**. See the [LICENSE](LICENSE) file for details.
-Ya puedes copiar este contenido a tu archivo `README.md` en el repositorio. Recuerda reemplazar la imagen `preview.png` por tu captura de pantalla cuando la tengas lista. ¡El repositorio quedará completo y profesional!
