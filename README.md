@@ -1,14 +1,12 @@
 
 # 🍎 GNOME macOS Buttons
 
-[English](#english) | [Español](#español)
-
 <img src="preview.png" alt="Vista previa de los botones" width="300" align="right">
 
 ---
 
 <a id="english"></a>
-## 🇬🇧 English
+## English
 
 ### What is this?
 
@@ -35,7 +33,7 @@ These files override only the `headerbar` button styles, leaving the rest of you
 
 1. **Download or clone the repository**  
    ```bash
-   git clone https://github.com/tuusuario/gnome-macos-buttons.git
+   git clone https://github.com/ArturoVargasDev/gnome-macos-buttons.git
    cd gnome-macos-buttons
    ```
 
@@ -71,7 +69,7 @@ You can edit the CSS files directly to change sizes, margins or colors. All the 
 ---
 
 <a id="español"></a>
-## 🇪🇸 Español
+## Español
 
 ### ¿Qué es esto?
 
