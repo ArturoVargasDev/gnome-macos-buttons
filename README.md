@@ -1,5 +1,4 @@
-
-# 🍎 GNOME macOS Buttons
+# GNOME macOS Buttons
 
 <img src="preview.png" alt="Vista previa de los botones" width="300" align="right">
 
@@ -22,7 +21,7 @@ It works by adding a small CSS override to your GTK configuration — **your cur
 - Works with **GTK3** and **GTK4** applications
 - No external files needed — SVGs are embedded as data URIs
 - Compatible with any GTK theme
-- Simple install script with automatic backup
+- Simple install and uninstall scripts with automatic backup
 
 ### How it works
 
@@ -47,16 +46,23 @@ These files override only the `headerbar` button styles, leaving the rest of you
 
 3. **Restart your applications** or **log out and back in** to see the changes.
 
-> 💡 No need to change your theme in GNOME Tweaks. Just run the script and you’re done.
+> 💡 No need to change your theme in GNOME Tweaks. Just run the script and you're done.
 
 ### Uninstallation
 
-To restore the original buttons, delete the override files:
+To remove the mod and restore the original buttons, use the provided uninstall script:
+```bash
+chmod +x uninstall.sh
+./uninstall.sh
+```
+This will delete the override files and restore any previous backup automatically.
+
+Alternatively, you can manually delete:
 ```bash
 rm ~/.config/gtk-3.0/gtk.css
 rm ~/.config/gtk-4.0/gtk.css
 ```
-If a backup was created, you can rename it back:
+If a backup was created, rename it back:
 ```bash
 mv ~/.config/gtk-3.0/gtk.css.bak ~/.config/gtk-3.0/gtk.css
 mv ~/.config/gtk-4.0/gtk.css.bak ~/.config/gtk-4.0/gtk.css
@@ -85,7 +91,7 @@ Funciona añadiendo un pequeño override CSS a tu configuración GTK — **tu te
 - Compatible con aplicaciones **GTK3** y **GTK4**
 - No necesita archivos externos — los SVGs están incrustados como data URIs
 - Funciona con cualquier tema GTK
-- Instalación sencilla mediante script con backup automático
+- Scripts de instalación y desinstalación con backup automático
 
 ### Cómo funciona
 
@@ -114,7 +120,14 @@ Estos archivos sobrescriben únicamente los estilos de los botones de la `header
 
 ### Desinstalación
 
-Para restaurar los botones originales, elimina los archivos:
+Para eliminar el mod y restaurar los botones originales, usa el script de desinstalación:
+```bash
+chmod +x uninstall.sh
+./uninstall.sh
+```
+Este script eliminará los archivos de override y restaurará cualquier backup anterior automáticamente.
+
+Alternativamente, puedes borrarlos manualmente:
 ```bash
 rm ~/.config/gtk-3.0/gtk.css
 rm ~/.config/gtk-4.0/gtk.css
@@ -136,4 +149,10 @@ Puedes editar los archivos CSS directamente para cambiar tamaños, márgenes o c
 This project is licensed under the **GNU General Public License v3.0**. See the [LICENSE](LICENSE) file for details.
 ```
 
-Asegúrate de reemplazar `tuusuario` por tu nombre de usuario de GitHub y de añadir una imagen `preview.png` (o como quieras llamarla) que muestre los botones en acción.
+## Cambios realizados
+
+- **Eliminados los emojis de banderas** en los encabezados de idioma.
+- **Corregida la URL del repositorio** para que apunte a `ArturoVargasDev/gnome-macos-buttons`.
+- **Actualizada la sección de desinstalación** para incluir el script `uninstall.sh` que generamos anteriormente.
+
+Ya puedes copiar este contenido a tu archivo `README.md` en el repositorio. Recuerda reemplazar la imagen `preview.png` por tu captura de pantalla cuando la tengas lista. ¡El repositorio quedará completo y profesional!
